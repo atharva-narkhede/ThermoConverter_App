@@ -1,1 +1,3 @@
-README.md
+# ThermoConverter Android App
+
+ThermoConverter is a versatile and user-friendly Android app built in Java, offering seamless temperature conversions. With a simple interface, users can input temperature values, choose the input unit (Celsius, Fahrenheit, or Kelvin), and instantly view accurate conversions in the other two units. Compatible with Android 7 (Nougat) and above, ThermoConverter ensures precise conversions and seamless usability anytime, anywhere, even without an internet connection. Perfect for students, scientists, and anyone needing swift and reliable temperature conversions on their Android device.
