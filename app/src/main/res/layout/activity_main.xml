@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1E1E"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_family"
+        android:layout_marginTop="10dp"
+        android:text="ThermoConverter"
+        android:textAlignment="center"
+        android:textColor="#FF4986"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/tempinp"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@drawable/edittext_bg"
+            android:gravity="center"
+            android:hint="Enter Temperature"
+            android:textColor="@color/white"
+            android:inputType="numberDecimal|numberSigned"
+            android:textAlignment="center"
+            android:textColorHint="@color/white" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/rb_bg"
+        >
+        <TextView
+            android:id="@+id/inputtxt"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Type:"
+            android:textColor="@color/black"
+            android:fontFamily="@font/font_family"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+
+                android:id="@+id/rbcelcius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_family"
+                android:text="Celcius"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/rbfahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_family"
+                android:text="Fahrenheit"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <RadioButton
+                android:id="@+id/rbkelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/font_family"
+                android:text="Kelvin"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+        </RadioGroup>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/outputtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Output"
+            android:textSize="25dp"
+            android:fontFamily="@font/font_family"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/ans1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:background="@drawable/rb_bg"/>
+
+        <TextView
+            android:id="@+id/ans2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="40dp"
+            android:background="@drawable/rb_bg"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
